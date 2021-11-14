@@ -19,13 +19,19 @@ desktop width = 1440px */
     align-items: center;
     width: 100%;
     background: $purple;
-
 }
 
 .logo {
     flex: 1;
     text-align: center;
-    color: white;
+    color: $white;
+    font-family: $font-josefin;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+
 }
 
 .section {
@@ -54,6 +60,7 @@ desktop width = 1440px */
 .logo-title, .logo-text {
     font-family: $font-josefin;
     color: $white;
+    line-height: 26px;
 }
 
 .logo-title {
@@ -76,6 +83,7 @@ desktop width = 1440px */
 
 .input, .button {
     border: none;
+    line-height: 26px;
 }
   
 .input {
@@ -114,11 +122,19 @@ desktop width = 1440px */
     align-items: center;
     max-width: 120px;
     width: 100%;
+    color: $white;
     font-family: $font-josefin;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 2.8px;
     text-align: center;
+}
+
+.scroll-link {
+    text-decoration: none;
+    line-height: 26px;
+    color: $white;
+    font-family: $font-josefin;
 }
 
 .second-section {
@@ -292,6 +308,36 @@ desktop width = 1440px */
     }
 
     .header {
+        height: 83px;
+    }
+
+
+
+    .nav {
+        flex: 1;
+    }
+      
+    .nav-items {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        color: $white;
+        font-family: $font-aleo;
+        font-size: 8px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    .nav-item a {
+        position: relative;
+        display: inline-block;
+        padding: 12px 12px 2px 12px;
+        color: $white;
+        text-decoration: none;
+        font-family: $font-aleo;
+    }
+
+    .header {
       order: 2;
     
     }
@@ -363,12 +409,13 @@ desktop width = 1440px */
 }
   
 /* Desktop */
-@media (min-width: 1220px) {
-    .wrapper {
+@media (min-width: 1100px) {
+    /*.wrapper {
         display: flex;
         justify-content: space-between;
         width: 0 auto;
-    }
+    }*/
+
     .nav-mobile {
         display: none;
     }
@@ -381,5 +428,11 @@ desktop width = 1440px */
         display: flex;
         justify-content: space-evenly;
         list-style-type: none;
+        color: $white;
+        font-family: $font-aleo;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 }
