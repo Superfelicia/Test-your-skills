@@ -128,10 +128,12 @@ desktop width = 1440px */
     background-size: cover;
 
     .content {
+        flex-grow: 1;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 20px;
         max-width: 580px;
     }
@@ -158,12 +160,25 @@ desktop width = 1440px */
     .button {
         width: 80%;
         font-size: 12px;
+        margin: 20px;
     }
     
-    .photo1 {
-    }
-    
-    .photo2 {
+    .photos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+        .photo1 {
+            width: 70%;
+            padding: 5px;
+        }
+
+        .photo2 {
+            width: 70%;
+            padding: 5px;
+        }
     }
 }
   
@@ -211,6 +226,10 @@ desktop width = 1440px */
         font-size: 20px;
         border: none;
         cursor: pointer;
+    }
+
+    .icon-dots {
+        color: $white;
     }
     
     .nav-icon {
@@ -276,14 +295,80 @@ desktop width = 1440px */
       order: 2;
     
     }
+
     .first-section {
       order: 1;
     }
+    
+    .second-section {
+        order: 3;
+        background: url('../images/section2.jpg') center center no-repeat;
+        min-height: 685px;
+        background-size: cover;
+        flex-direction: row;
+        
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 20px;
+            max-width: 580px;
+        }
+        
+        .second-title {
+            font-family: $font-aleo;
+            color: $white;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            
+            .second-text {
+                font-family: $font-aleo;
+                color: $white;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 26px;
+                letter-spacing: 1.6px;
+                width: 80%;
+            }
+            
+            .button {
+                width: 80%;
+                font-size: 12px;
+            }
+        }
+    }
+    
+    .photos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        
+        .photo1 {
+            width: 100%;
+            padding: 5px;
+            align-self: flex-start;
+        }
 
+        .photo2 {
+            width: 100%;
+            padding: 5px;
+            align-self: flex-end;
+        }
+    }
 }
   
 /* Desktop */
-@media (min-width: 1440px) {
+@media (min-width: 1220px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 0 auto;
+    }
     .nav-mobile {
         display: none;
     }
