@@ -19,6 +19,7 @@ desktop width = 1440px */
     align-items: center;
     width: 100%;
     background: $purple;
+    z-index: 1;
 }
 
 .logo {
@@ -253,13 +254,67 @@ desktop width = 1440px */
     order: 5;
     background: url('../images/section4.jpg') center center no-repeat;
     min-height: 700px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .travel-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 60%;
+        height: 70%;
+    }
+
+    .travel-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 543px;
+        width: 100%;
+        min-height: 374px;
+        padding: 2%;
+        background-color: $blackgray;
+        opacity: 0.9;
+    }
 }
 
 .second-fourth-section {
     order: 6;
     background: url('../images/section4-2.jpg') center center no-repeat;
     min-height: 700px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .travel-container2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 60%;
+        height: 70%;
+    }
+
+    .travel-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 543px;
+        width: 100%;
+        min-height: 374px;
+        padding: 2%;
+        background-color: $blackgray;
+        opacity: 0.9;
+    }
 }
+
+
 
 .fifth-section {
     order: 7;
@@ -434,7 +489,6 @@ desktop width = 1440px */
             }
         }
     }
-    
     .icon-text {
         padding: 2%;
         font-size: 24px;
