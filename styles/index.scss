@@ -344,7 +344,7 @@ desktop width = 1440px */
         font-size: 18px;
         line-height: 26px;
     }
-    
+
     .text-area {
         color: $white;
         font-family: $font-josefin;
@@ -359,6 +359,55 @@ desktop width = 1440px */
     order: 7;
     background: url('../images/section5.jpg') center center no-repeat;
     min-height: 730px;
+    width: 100%;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section5-content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .second-title {
+        color: $white;
+        font-family: $font-josefin;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+
+.testimonial-image {
+    max-width: 445px;
+    width: 100%;
+}
+
+.testimonial-text {
+    padding: 4% 6%;
+    background-color: $section3-bg;
+
+    .testimonial-text, .title-second {
+        color: $white;
+        font-family: $font-josefin;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .text-area {
+        color: $white;
+        font-family: $font-josefin;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
 
 .footer-section {
