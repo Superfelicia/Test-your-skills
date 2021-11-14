@@ -10,14 +10,6 @@ desktop width = 1440px */
     flex-direction: column;
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 685px;
-}
-  
 .header {
     position: sticky;
     top: 0;
@@ -28,10 +20,170 @@ desktop width = 1440px */
     width: 100%;
     background: $purple;
 }
+
+.logo {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.nav-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-btn {
+    background-color: $purple;
+    padding: 8px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-items {
+    display: flex;
+    position: absolute;
+    background-color: $white;
+    opacity: 0.8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    right: 0;
+    cursor: pointer;
+    top: 32px;
+    padding: 2px;
+}
+
+.nav-item a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 12px 2px 12px;
+    color: black;
+    text-decoration: none;
+    font-family: $font-aleo;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid $purple;
+}
+
+.nav-icon:hover .nav-items {
+    display: block;
+}
+
+.nav-icon:hover .mobile-btn {
+    background-color: $purple;
+}
+
+
+// Tablet & desktop-nav
+.nav {
+    flex: 1;
+    display: none;
+}
+  
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: none;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 685px;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   
 .first-section {
     order: 2;
     background: url('../images/header.jpg') center center no-repeat;
+}
+
+.logo-title, .logo-text {
+    font-family: $font-josefin;
+    color: $white;
+}
+
+.logo-title {
+    font-size: 32px;
+}
+
+.logo-text {
+    font-size: 22px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input, .button {
+    border: none;
+}
+  
+.input {
+    max-width: 500px;
+    width: 100%;
+    background-color: $white;
+    padding: 2px 5px;
+    font-family: $font-josefin;
+    color: $middle-gray;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid #000000;
+}
+
+.input::placeholder {
+    font-size: 10px;
+}
+  
+.button {
+    max-width: 153px;
+    width: 40%;
+    background-color: $purple;
+    border: 2px solid $white;
+    color: $white;
+    text-align: center;
+    letter-spacing: 1.4px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    font-family: $font-josefin;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    text-align: center;
 }
 
 .second-section {
@@ -52,65 +204,6 @@ desktop width = 1440px */
 .fifth-section {
     order: 6;
     background: yellow;
-}
-
-.input, .button {
-    border: none;
-}
-  
-.input {
-    background-color: white;
-}
-  
-.button {
-    border-left: 1px solid gray;
-}
-  
-.input-wrapper {
-    display: flex;
-    border: 1px solid gray;
-}
-  
-.scroll {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-  
-.logo {
-    flex: 1;
-    text-align: center;
-    color: white;
-}
-  
-.nav {
-    flex: 1;
-}
-  
-.nav-items {
-    display: flex;
-    justify-content: space-evenly;
-}
-  
-.content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-title, .logo-text {
-    font-family: $font-josefin;
-    color: $white;
-}
-
-.logo-title {
-    font-size: 32px;
-}
-
-.logo-text {
-    font-size: 22px;
 }
 
   /* Tablet */
